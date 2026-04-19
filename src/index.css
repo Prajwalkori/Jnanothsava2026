@@ -54,7 +54,7 @@ img { max-width: 100%; display: block; }
   min-height: 100vh;
 }
 
-.app-wrapper > *:not(.liquid-background) {
+.app-wrapper > *:not(.liquid-background):not(.navbar) {
   position: relative;
   z-index: 1;
 }
