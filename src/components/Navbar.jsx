@@ -18,6 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   const navItems = [
@@ -31,7 +32,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)}>
           <span className="text-gradient">Sharnbasva University</span>
         </Link>
 
@@ -45,6 +46,10 @@ const Navbar = () => {
               <Link
                 to={item.path}
                 className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  setIsOpen(false);
+                }}
               >
                 {item.name}
               </Link>
