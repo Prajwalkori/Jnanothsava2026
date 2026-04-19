@@ -1,0 +1,58 @@
+/* src/components/EventCard.css */
+.event-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 15, 24, 0.7);
+  text-align: left;
+  backdrop-filter: blur(14px);
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(147, 51, 234, 0.52);
+  box-shadow: 0 20px 40px rgba(107, 33, 168, 0.18);
+}
+
+.event-card-category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #f0b4ff;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.event-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.event-card-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.event-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.event-card-footer svg {
+  color: var(--color-primary-light);
+}

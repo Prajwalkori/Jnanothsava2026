@@ -1,0 +1,23 @@
+.events-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.category-section {
+  margin-bottom: 5rem;
+}
+
+.category-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
