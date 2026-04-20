@@ -346,4 +346,30 @@ img { max-width: 100%; display: block; }
   .content-panel--padded {
     padding: 1.5rem;
   }
+
+  /* Mobile Performance Optimizations */
+  .liquid-background__aurora {
+    animation-duration: 40s; /* Slower drift to save CPU/GPU */
+    filter: blur(30px); /* Less expensive blur radius */
+  }
+
+  .liquid-background__grain {
+    opacity: 0.02; 
+    animation: none; /* Disabling rapid noise shift to prevent lag */
+  }
+
+  .btn-explore {
+    animation: none; /* Disable infinite pulse on mobile */
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.4);
+  }
+}
+
+/* Accessibility: Respect user's OS preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
