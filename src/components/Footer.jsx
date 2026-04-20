@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-gradient">Jnanothsava</span>
             </div>
             <p>
-              A National Level Techno-Cultural Fest.
+              A Techno-Cultural Fest.
               Innovate, Compete, Celebrate.
             </p>
           </div>

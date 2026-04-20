@@ -15,7 +15,7 @@ const Home = () => {
           </h1>
           <h2 className="hero-tagline">Innovate. Compete. Celebrate.</h2>
           <p className="hero-subtext">
-            A National Level Techno-Cultural Fest designed to ignite minds
+            A Techno-Cultural Fest designed to ignite minds
             and bring out the extraordinary in you.
           </p>
           <div className="hero-actions">

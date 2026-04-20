@@ -260,7 +260,12 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-explore {
-  animation: pulse-glow 2.5s infinite;
+  animation: pulse-glow 2.5s infinite, button-attention 4s ease-in-out infinite;
+}
+
+@keyframes button-attention {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
 
 @keyframes pulse-glow {
@@ -359,7 +364,7 @@ img { max-width: 100%; display: block; }
   }
 
   .btn-explore {
-    animation: none; /* Disable infinite pulse on mobile */
+    animation: button-attention 4s ease-in-out infinite; /* Keep scale animation but remove complex glow for mobile */
     box-shadow: 0 0 15px rgba(147, 51, 234, 0.4);
   }
 }
