@@ -9,8 +9,8 @@ const About = () => {
 
       <div className="content-panel content-panel--spacious muted-copy">
         <p style={{ marginBottom: '1.5rem' }}>
-          <strong style={{ color: 'var(--color-text)' }}>Jnanothsava 2026</strong> is the premier national-level Techno-Cultural Fest.
-          It gathers the brightest minds across the country to showcase their technical prowess, leadership qualities, and cultural talents.
+          <strong style={{ color: 'var(--color-text)' }}>Jnanothsava 2026</strong> is the premier Techno-Cultural Fest.
+          It gathers the brightest minds to showcase their technical prowess, leadership qualities, and cultural talents.
         </p>
         <p style={{ marginBottom: '1.5rem' }}>
           Our mission is to foster <strong style={{ color: 'var(--color-primary-light)' }}>innovation, creativity, and student engagement</strong>.

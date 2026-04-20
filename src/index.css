@@ -260,12 +260,23 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-explore {
-  animation: pulse-glow 2.5s infinite, button-attention 4s ease-in-out infinite;
+  animation: pulse-glow 2.5s infinite, button-attention 3s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-explore::before {
+  animation: shimmer-sweep 3s infinite;
+}
+
+@keyframes shimmer-sweep {
+  0% { left: -100%; }
+  50% { left: 150%; }
+  100% { left: 150%; }
 }
 
 @keyframes button-attention {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  50% { transform: scale(1.08); }
 }
 
 @keyframes pulse-glow {
